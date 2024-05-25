@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator"> 
+        <div id="display" class="display">0</div>
+        <div class="buttons">
+            <button class="button button-grey" onclick="adicionar('AC')">AC</button>
+            <button class="button button-grey" onclick="apagar()">C</button>
+            <button class="button button-grey">%</button>
+            <button class="button button-orange" onclick="adicionar('/')">/</button>
+            <button class="button" onclick="adicionar('7')">7</button>
+            <button class="button" onclick="adicionar('8')">8</button>
+            <button class="button" onclick="adicionar('9')">9</button>
+            <button class="button button-orange" onclick="adicionar('*')">X</button>
+            <button class="button" onclick="adicionar('4')">4</button>
+            <button class="button" onclick="adicionar('5')">5</button>
+            <button class="button" onclick="adicionar('6')">6</button>
+            <button class="button button-orange" onclick="adicionar('-')">-</button>
+            <button class="button" onclick="adicionar('1')">1</button>
+            <button class="button" onclick="adicionar('2')">2</button>
+            <button class="button" onclick="adicionar('3')">3</button>
+            <button class="button button-orange" onclick="adicionar('+')">+</button>
+            <button class="button" id="double" onclick="adicionar('0')">0</button>
+            <button class="button" onclick="adicionar('.')">,</button>
+            <button class="button button-orange" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
